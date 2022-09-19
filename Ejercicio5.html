@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <title>Ejercicio 5</title>
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/Ejercicio5.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="menu-dashboard">
+        <!-- TOP MENU -->
+        <div class="top-menu">
+            <div class="logo">
+                <img src="img/java-script1.jpg" alt="">
+            </div>
+            <div class="toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </div>
+        <!-- INPUT SEARCH 
+        <div class="input-search">
+            <i class='bx bx-search'></i>
+            <input type="text" class="input" placeholder="Buscar">
+        </div> -->
+        <!-- MENU -->
+        <div class="menu">
+
+            <div class="enlace">
+                <i class="bx bx-user"></i>
+                <a href="Ejercicio1.html"><span>Ejercicio 1</span></a>
+            </div>
+
+            <div class="enlace">
+                <i class="bx bx-grid-alt"></i>
+                <a href="Ejercicio2.html"><span>Ejercicio 2</span></a>
+            </div>
+
+            <div class="enlace">
+                <i class="bx bx-message-square"></i>
+                <a href="Ejercicio3.html"><span>Ejercicio 3</span></a>
+            </div>
+
+            <div class="enlace">
+                <i class="bx bx-file-blank"></i>
+                <a href="Ejercicio4.html"><span>Ejercicio 4</span></a>
+            </div>
+
+            <div class="enlace">
+                <i class="bx bx-cart"></i>
+                <a href="Ejercicio5.html"><span>Ejercicio 5</span></a>
+            </div>
+
+            <div class="enlace">
+                <i class="bx bx-heart"></i>
+                <a href="Ejercicio6.html"><span>Ejercicio 6</span></a>
+            </div>
+        </div>
+    </div>
+    <section id="separador">
+        <div class="card__container">
+            <!--Rectangulo-->
+            <div class="card__item">
+                <img src="http://assets.stickpng.com/thumbs/58afdaa0829958a978a4a68a.png" class="rectangulo">
+                <h3 class="card__title">Rectángulo</h3>
+                <button id="rectanguloPerimetro" class="button is-primary">Perímetro</button>
+                <button id="rectanguloArea" class="button is-primary">Área</button>
+            </div>
+            <!--Perimetro Rectangulo-->
+            <div id="perimetroRectangulo" class="modal">
+                <div class="contenidoModal">
+                    <span class="cerrarRectangulo"><ion-icon name="close"></ion-icon></span>
+                    <h1 id="tituloo" class="title is-1">Perimetro</h1>
+                    <div class="form-group">
+                        <input id="baseRectangulo" type="text" class="input is-primary" placeholder="Ingresa la base del Rectangulo">
+                        <input id="alturaRectangulo" type="text" class="input is-primary" placeholder="Ingresa la altura lado del Rectangulo">
+                        <button id="calcularRectangulo" type="button" class="button is-primary diseno">Calcular</button>
+                    </div>
+                </div>
+            </div>
+            <!--Area Rectangulo-->
+            <div id="areaRectangulo" class="modal">
+                <div class="contenidoModal">
+                    <span class="cerrarRectangulo2"><ion-icon name="close"></ion-icon></span>
+                    <h1 id="tituloo" class="title is-1">Area</h1>
+                    <div class="form-group">
+                        <input id="baseRectangulo2" type="text" class="input is-primary" placeholder="Ingresa la base del Rectangulo">
+                        <input id="alturaRectangulo2" type="text" class="input is-primary" placeholder="Ingresa la altura lado del Rectangulo">
+                        <button id="calcularRectangulo2" type="button" class="button is-primary diseno">Calcular</button>
+                    </div>
+                </div>
+            </div>
+            <!--Cuadrado-->
+            <div class="card__item">
+                <img src="https://i.pinimg.com/originals/39/98/08/399808c7787f2c87cfa2b217deb4245b.png" class="card__picture">
+                <h3 class="card__title">Cuadrado</h3>
+                <button id="cuadradoPerimetro" class="button is-primary">Perímetro</button>
+                <button id="cuadradoArea" class="button is-primary">Área</button>
+            </div>
+            <!--Perimetro Cuadrado-->
+            <div id="perimetroCuadrado" class="modal">
+                <div class="contenidoModal">
+                    <span class="cerrarCuadrado"><ion-icon name="close"></ion-icon></span>
+                    <h1 id="tituloo" class="title is-1">Perimetro</h1>
+                    <div class="form-group">
+                        <input id="ladoCuadrado" type="number" class="input is-primary" placeholder="Ingresa el lado del cuadrado">
+                        <button id="calcularCuadrado" type="button" class="button is-primary diseno">Calcular</button>
+                    </div>
+                </div>
+            </div>
+            <!--Area Cuadrado-->
+            <div id="areaCuadrado" class="modal">
+                <div class="contenidoModal">
+                    <span class="cerrarCuadrado2"><ion-icon name="close"></ion-icon></span>
+                    <h1 id="tituloo" class="title is-1">Area</h1>
+                    <div class="form-group">
+                        <input id="ladoCuadrado2" type="number" class="input is-primary" placeholder="Ingresa el lado del cuadrado">
+                        <button id="calcularCuadrado2" type="button" class="button is-primary diseno">Calcular</button>
+                    </div>
+                </div>
+            </div>
+            <!--Circulo-->
+            <div class="card__item">
+                <img src="https://don-g.com/wp-content/uploads/2020/02/circulo-rojo-png-4.png" class="card__picture">
+                <h3 class="card__title">Círculo</h3>
+                <button id="circuloPerimetro" class="button is-primary">Perímetro</button>
+                <button id="circuloArea" class="button is-primary">Área</button>
+            </div>
+            <!--Perimetro Circulo-->
+            <div id="perimetroCirculo" class="modal">
+                <div class="contenidoModal">
+                    <span class="cerrarCirculo"><ion-icon name="close"></ion-icon></span>
+                    <h1 id="tituloo" class="title is-1">Perimetro</h1>
+                    <div class="form-group">
+                        <input id="radio" type="number" class="input is-primary" placeholder="Ingresa el radio del circulo">
+                        <button id="calcularCirculo" type="button" class="button is-primary diseno">Calcular</button>
+                    </div>
+                </div>
+            </div>
+            <!--Area Circulo-->
+            <div id="areaCirculo" class="modal">
+                <div class="contenidoModal">
+                    <span class="cerrarCirculo2"><ion-icon name="close"></i></span>
+                    <h1 id="tituloo" class="title is-1">Area</h1>
+                    <div class="form-group">
+                        <input type="number" id="radio2" class="input is-primary" placeholder="Ingresa el radio del circulo">
+                        <button id="calcularCirculo2" type="button" class="button is-primary diseno">Calcular</button>
+                    </div>
+                </div>
+            </div>
+            <!--Triangulo-->
+            <div class="card__item">
+                    <img src="https://www.pngmart.com/files/17/Triangle-Shape-Transparent-PNG.png" class="card__picture">
+                <h3 class="card__title">Triángulo</h3>
+                <button id="trianguloPerimetro" class="button is-primary">Perímetro</button>
+                <button id="trianguloArea" class="button is-primary">Área</button>
+            </div>
+            <!--Perimetro Triangulo-->
+            <div id="perimetroTriangulo" class="modal">
+                <div class="contenidoModal">
+                    <span class="cerrarTriangulo"><ion-icon name="close"></ion-icon></span>
+                    <h1 id="tituloo" class="title is-1">Perimetro</h1>
+                    <div class="form-group">
+                        <input id="lado1" type="number" class="input is-primary" placeholder="Ingresa el primer lado del triangulo">
+                        <input id="lado2" type="number" class="input is-primary" placeholder="Ingresa el segundo lado del triangulo">
+                        <input id="lado3" type="number" class="input is-primary" placeholder="Ingresa el tercer lado del triangulo">
+                        <button id="calcularTriangulo" type="button" class="button is-primary diseno">Calcular</button>
+                    </div>
+                </div>
+            </div>
+            <!--Area Triangulo-->
+            <div id="areaTriangulo" class="modal">
+                <div class="contenidoModal">
+                    <span class="cerrarTriangulo2"><ion-icon name="close"></ion-icon></span>
+                    <h1 id="tituloo" class="title is-1">Area</h1>
+                    <div class="form-group">
+                        <input id="baseTriangulo" type="number" class="input is-primary" placeholder="Ingresa la base del triangulo">
+                        <input id="alturaTriangulo" type="number" class="input is-primary" placeholder="Ingresa la altura lado del triangulo">
+                        <button id="calcularTriangulo2" type="button" class="button is-primary diseno">Calcular</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <script src="js/Ejercicio5.js" defer></script>
+</body>
+</html>

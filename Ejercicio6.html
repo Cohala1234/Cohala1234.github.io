@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <title>Ejercicio 6</title>
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/Ejercicio6.css">
+</head>
+<body>
+    <div class="menu-dashboard">
+        <!-- TOP MENU -->
+        <div class="top-menu">
+            <div class="logo">
+                <img src="img/java-script1.jpg" alt="">
+            </div>
+            <div class="toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </div>
+        <!-- INPUT SEARCH 
+        <div class="input-search">
+            <i class='bx bx-search'></i>
+            <input type="text" class="input" placeholder="Buscar">
+        </div> -->
+        <!-- MENU -->
+        <div class="menu">
+
+            <div class="enlace">
+                <i class="bx bx-user"></i>
+                <a href="Ejercicio1.html"><span>Ejercicio 1</span></a>
+            </div>
+
+            <div class="enlace">
+                <i class="bx bx-grid-alt"></i>
+                <a href="Ejercicio2.html"><span>Ejercicio 2</span></a>
+            </div>
+
+            <div class="enlace">
+                <i class="bx bx-message-square"></i>
+                <a href="Ejercicio3.html"><span>Ejercicio 3</span></a>
+            </div>
+
+            <div class="enlace">
+                <i class="bx bx-file-blank"></i>
+                <a href="Ejercicio4.html"><span>Ejercicio 4</span></a>
+            </div>
+
+            <div class="enlace">
+                <i class="bx bx-cart"></i>
+                <a href="Ejercicio5.html"><span>Ejercicio 5</span></a>
+            </div>
+
+            <div class="enlace">
+                <i class="bx bx-heart"></i>
+                <a href="Ejercicio6.html"><span>Ejercicio 6</span></a>
+            </div>
+        </div>
+    </div>
+    <main>
+		<form action="" class="formulario" id="formulario">
+            <!--Grupo: Tipo de Documento-->
+            <div class="formulario__grupo" id="grupo__tipoDoc">
+                <label for="tipodoc" class="label">Tipo de Documento</label>
+                <div class="select is-primary formulario__grupo-input" id="arregloo">
+                    <select name="tipodoc" id="tipodoc" class="frm-input" required>
+                        <option value="">Seleccione una opcion..</option>
+                        <option value="1">Cédula</option>
+                        <option value="2">Tarjeta identidad</option>
+                        <option value="3">Otro</option>
+                    </select>
+                </div>
+            </div>
+            <!--Grupo: Numero de Documento-->
+            <div class="formulario__grupo" id="grupo__numdoc">
+                <label for="numdoc" class="label">Numero de Documento</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="input is-primary formulario__input" name="numdoc" id="numdoc" placeholder="Numero de Documento">
+                </div>
+                <p class="formulario__input-error">Solo puedes ingresar números de minimo 8 y 10 digitos</p>
+            </div>
+			<!-- Grupo: Nombre -->
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="label">Nombre</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="input is-primary formulario__input" name="nombre" id="nombre" placeholder="Nombre">
+				</div>
+				<p class="formulario__input-error">El nombre debe llevar solo letras, no se permite números</p>
+			</div>
+            <!-- Grupo: Apellido -->
+            <div class="formulario__grupo" id="grupo__apellido">
+                <label for="apellido" class="label">Apellido</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="input is-primary formulario__input" name="apellido" id="apellido" placeholder="Apellido">
+                </div>
+                <p class="formulario__input-error">El nombre debe llevar solo letras, no se permite números</p>
+            </div>
+            <div class="formulario__grupo" id="grupo__fecha">
+                <label for="fecha" class="label">Fecha de nacimiento</label>
+                <div class="formulario__grupo-input">
+                    <input class="formulario__input alargo" id="fecha" name="fecha" type="date">
+                </div>
+                <p class="formulario__input-error">Por favor ingresa una fecha.</p>
+            </div>
+            <div>
+            <!-- Grupo: Correo Electronico -->
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="label">Correo Electrónico</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="input is-primary formulario__input" name="correo" id="correo" placeholder="usuario@correo.com">
+				</div>
+				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+			<!-- Grupo: Contraseña -->
+			<div class="formulario__grupo" id="grupo__password">
+				<label for="password" class="label">Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="input is-primary formulario__input" name="password" id="password">
+				</div>
+				<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+			</div>
+			<!-- Grupo: Contraseña 2 -->
+			<div class="formulario__grupo" id="grupo__password2">
+				<label for="password2" class="label">Repetir Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="input is-primary formulario__input" name="password2" id="password2">
+				</div>
+				<p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+			</div>
+			<!-- Grupo: Terminos y Condiciones -->
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label id="terminosss" class="label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+			</div>
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
+		</form>
+	</main>
+	<script src="js/Ejercicio6.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
